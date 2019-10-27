@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "runJenkins": "/bin/sh up.sh",
-    "buildJenkins": "docker build -t jenkinsdocker:latest docker/jenkins/"
+    "buildJenkins": "docker build -t jenkinsdocker:latest docker/jenkins/",
+    "buildBrowsers": "docker build -t browsers:latest docker/browsers/"
   },
   "keywords": [],
   "author": "",
