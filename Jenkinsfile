@@ -1,7 +1,7 @@
 node {
   stage('First') {
-    def ubuntu = docker.image('ubuntu:latest')
-    ubuntu.inside {
+    def browsers = docker.build('docker/browsers/Dockerfile')
+    browsers.inside {
       checkout scm
       sh 'touch index.html'
       sh 'ls -la > results.txt'
