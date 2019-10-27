@@ -30,6 +30,7 @@ RUN chown node /opt/.npm-global
 ###################################################################################################
 RUN apt-get update -qqy && apt-get -qqy install \
     bzip2 \
+    curl \
     wget \
     xvfb \
  && rm -rf /var/lib/apt/lists/*
