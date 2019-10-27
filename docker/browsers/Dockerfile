@@ -64,7 +64,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 
 # Chrome Launch Script Modification
 
-COPY bin/chrome_launcher.sh /opt/google/chrome/google-chrome
+COPY docker/browsers/bin/chrome_launcher.sh /opt/google/chrome/google-chrome
 RUN chmod +x /opt/google/chrome/google-chrome
 
 # Install Firefox Browser
